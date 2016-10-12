@@ -8,11 +8,11 @@ class File:
 
     def get_ext(self):
         file_and_ext = str(self.name).split(".")
-        if type(file_and_ext) == list:
+        if type(file_and_ext) == list and len(file_and_ext) > 1:
             file_and_ext.reverse()
-            return file_and_ext[0]
+            return str(file_and_ext[0]).lower()
         else:
-            return " "
+            return "none"
 
     def get_full_path(self):
         return os.path.join(self.location, self.name)
