@@ -1,3 +1,5 @@
 file_sorter.iml
 .idea/
 to_sort/
+__pycache__/
+build/
