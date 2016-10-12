@@ -3,3 +3,5 @@ file_sorter.iml
 to_sort/
 __pycache__/
 build/
+dist/
+file_sorter.egg-info/
