@@ -7,7 +7,12 @@ class File:
         self.location = location
 
     def get_ext(self):
-        return self.name.split(".")[1]
+        file_and_ext = str(self.name).split(".")
+        if type(file_and_ext) == list:
+            file_and_ext.reverse()
+            return file_and_ext[0]
+        else:
+            return " "
 
     def get_full_path(self):
         return os.path.join(self.location, self.name)

@@ -11,13 +11,14 @@ class FileSorter:
     def get_file_extensions(self):
         file_dict = dict()
         for real_file in os.listdir(self.folder_location):
-            file = File(real_file, self.folder_location)
-            try:
-                file_ext_array = file_dict[file.get_ext()]
-            except KeyError:
-                file_ext_array = []
-            file_ext_array.append(file)
-            file_dict[file.get_ext()] = file_ext_array
+            if os.path.isfile(os.path.join(self.folder_location, real_file)):
+                file = File(real_file, self.folder_location)
+                try:
+                    file_ext_array = file_dict[file.get_ext()]
+                except KeyError:
+                    file_ext_array = []
+                file_ext_array.append(file)
+                file_dict[file.get_ext()] = file_ext_array
         return file_dict
 
     def sort_files(self):
