@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='file_sorter',
-    version='1.0.0',
+    version='1.0.1',
     packages=[''],
     url='',
     license='',
