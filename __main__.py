@@ -19,7 +19,6 @@ def main():
     location = options["directory"]
     file_sorter = FileSorter(location, sort_type)
     file_sorter.sort_files()
-    #file_sorter.file_helper.generate_random_files()
 
 
 if __name__ == '__main__':

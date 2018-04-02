@@ -1,6 +1,6 @@
 import os
 import datetime
-from sort_type import *
+from sort_type import SortType
 import uuid
 from pathlib import Path
 
