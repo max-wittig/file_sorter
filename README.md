@@ -2,8 +2,8 @@
 sorts files into directories, based on their file extension
 
 ## usage
-1. download release .egg  
-2. run release egg on the folder you want to sort `python3 file_sorter.egg /home/$USER/Download/`
+1. download release .whl
+2. run release whl on the folder you want to sort `python3 file_sorter.whl /home/$USER/Download/`
 
 ```
 usage: file_sorter [-h] [-s {fe,md}] directory

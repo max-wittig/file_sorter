@@ -50,4 +50,4 @@ class FileSorter:
         """sort files into dirs"""
         for ext in file_dict.keys():
             for file in file_dict[ext]:
-                os.rename(file.full_path, file.new_path)
+                os.replace(file.full_path, file.new_path)
