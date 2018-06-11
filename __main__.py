@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import argparse
 
-from file_sorter import FileSorter
-from sort_type import SortType
+from src.file_sorter import FileSorter
+from src.sort_type import SortType
 
 
 def get_args():

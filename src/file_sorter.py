@@ -1,14 +1,14 @@
-from file import File
-from file_helper import FileHelper
-from sort_type import SortType
 import os
+
+from src.file import File
+from src.file_helper import FileHelper
+from src.sort_type import SortType
 
 
 class FileSorter:
     def __init__(self, folder_location, sort_type):
         self.folder_location = folder_location
         self.sort_type = sort_type
-        self.file_helper = FileHelper(folder_location)
 
     def file_extensions(self):
         file_dict = dict()
@@ -45,7 +45,7 @@ class FileSorter:
             file_dict = self.file_extensions()
 
         """create empty folder for each extension"""
-        self.file_helper.create_empty_folders(file_dict.keys())
+        FileHelper.create_empty_folders(self.folder_location, file_dict.keys())
 
         """sort files into dirs"""
         for ext in file_dict.keys():
