@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='file_sorter',
     version='2.0.0',
-    packages=[''],
+    packages=['src'],
     url='https://github.com/max-wittig/file_sorter',
     license='MIT',
     author='max-wittig',
